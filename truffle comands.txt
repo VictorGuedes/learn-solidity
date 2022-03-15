@@ -1,0 +1,10 @@
+------ truffle comands ----------
+
+truffle compile
+truffle develop 
+migrate
+migrate --reset
+let instance = await HelloWorld.deployed()
+instance.hello()
+instance.setMessage("pokemon")
+instance.setMessage("pokemon", {value: web3.utils.toWei{"1", "ether"}})
