@@ -1,1 +1,3 @@
 wallet.deposit(100, web3.utils.fromUtf8("LINK"))
+
+truffle test
