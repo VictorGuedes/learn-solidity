@@ -29,7 +29,7 @@ async function main() {
 
   const contract = await contractFactory.deploy();
   await contract.deployTransaction.wait(1); // espera 1 bloco ser confirmado
-
+  console.log(`contract address: ${contract.address}`);
   /*console.log("Lets deploy with only transaction data!");
   const nonce = await wallet.getTransactionCount();
   const chainId = await wallet.getChainId();
